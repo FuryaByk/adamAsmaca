@@ -73,7 +73,7 @@ namespace adamAsmaca
             {
                 //harf yoksa yapılacaklar
                 yanlisTahmin++;
-                ResimAc(yanlisTahmin);
+               
                 
             }
             label1.Text = string.Empty;
@@ -82,44 +82,7 @@ namespace adamAsmaca
                 label1.Text += s;
             }
         }
-        public void ResimAc(int y)
-        {
-            if (y<7)
-            {
-                if (y == 1)
-                {
-                    pictureBox1.Visible = true;
-                }
-                else if (y == 2)
-                {
-                    pictureBox2.Visible = true;
-                }
-                else if (y == 3)
-                {
-                    pictureBox3.Visible = true;
-                }
-                else if (y == 4)
-                {
-                    pictureBox4.Visible = true;
-                }
-                else if (y == 5)
-                {
-                    pictureBox5.Visible = true;
-                }
-                else
-                {
-                    pictureBox6.Visible = true;
-                } 
-            }
-            else
-            {
-                foreach (Control item in this.Controls)
-                {
-                    item.Enabled = false;
-                }
-                MessageBox.Show("Game Over Kuzum :)");
-            }
-        }
+       
 
 
 
